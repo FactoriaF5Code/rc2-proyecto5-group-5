@@ -1,7 +1,12 @@
 import './App.css';
+import { Movie } from './components/Movie/Movie';
 
 function App() {
-  return <></>;
+  return (
+
+    <Movie />
+  )
+  
 }
 
 export default App;
