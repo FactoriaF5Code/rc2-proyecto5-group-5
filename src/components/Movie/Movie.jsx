@@ -2,7 +2,7 @@ import "./movie.css";
 import { useState, useEffect } from "react";
 import api_URL from "../data/Data";
 import requests from "../data/Request";
-import axios from "axios";
+
 
 export function Movie() {
   const [movies, setMovies] = useState([]);
