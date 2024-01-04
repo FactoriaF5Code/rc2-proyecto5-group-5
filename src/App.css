@@ -1,0 +1,26 @@
+:root{
+  --Azul: #0066ff;   
+  --Amarillo: #f7d417;
+  --fondoOscuro: #2a2a2a;
+  --fondoNegro: #000;
+  
+}
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    
+}
+ *,*::before,*::after {
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;   
+}
+body{
+  background-color: var(--fondoNegro);
+}
