@@ -9,14 +9,14 @@ function App() {
   return (
     <div>
       <Header />
-      <Series className="section1" />
-      <Series className="section2" />
-      <Series className="section3" />
-      <Series className="section4" />
-      <Series className="section5" />
-      <Series className="section6" />
-      <Series className="section7" />
-      <Series className="section8" />
+      <Movies className="section1" />
+      <Movies className="section2" />
+      <Movies className="section3" />
+      <Movies className="section4" />
+      <Movies className="section5" />
+      <Movies className="section6" />
+      <Movies className="section7" />
+      <Movies className="section8" />
     </div>
   );
 }
