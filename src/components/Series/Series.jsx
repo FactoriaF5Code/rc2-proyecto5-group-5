@@ -7,15 +7,20 @@ export const Series = () => {
 
   useEffect(() => {
     const url = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}`;
-
-    fetch(url)
-      .then((response) => response.json())
-      .then((response) => {
-        setData(response.results);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    let series = localStorage.getItem("series");
+    if (series === null) {
+      fetch(url)
+        .then((response) => response.json())
+        .then((response) => {
+          localStorage.setItem("series", JSON.stringify(response));
+          setData(response.results);
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    } else {
+      setData(JSON.parse(series).results);
+    }
   }, []);
 
   return (
