@@ -1,30 +1,17 @@
 import "./Series.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import ApiFetcher from "../fetch/ApiFetcher";
 
 export const Series = () => {
   const [data, setData] = useState([]);
-  const apiKey = "dd26df0c4c5b1b95d64c9c4568821204";
 
-  useEffect(() => {
-    const url = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}`;
-    let series = localStorage.getItem("series");
-    if (series === null) {
-      fetch(url)
-        .then((response) => response.json())
-        .then((response) => {
-          localStorage.setItem("series", JSON.stringify(response));
-          setData(response.results);
-        })
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-        });
-    } else {
-      setData(JSON.parse(series).results);
-    }
-  }, []);
+  const handleDataFetched = (series) => {
+    setData(series);
+  };
 
   return (
     <div className="App">
+      <ApiFetcher dataFetched={handleDataFetched} />
       <div className="serie">
         {data.length === 0 ? (
           <p>Cargando...</p>
@@ -44,3 +31,5 @@ export const Series = () => {
     </div>
   );
 };
+
+
