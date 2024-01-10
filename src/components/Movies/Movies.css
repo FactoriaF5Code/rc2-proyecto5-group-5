@@ -1,10 +1,11 @@
 .movie section {
-  margin: 0 4.3rem 10rem 4.3rem;
+  margin: 0 4.3rem 5rem 4.3rem;
 }
 
 .movie h2 {
   margin-bottom: 2rem;
   font-size: 3.2rem;
+  color: var(--blanco);
 }
 .movie ul {
   display: flex;
