@@ -29,16 +29,19 @@ export const Series = () => {
         {data.length === 0 ? (
           <p>Cargando...</p>
         ) : (
-          <ul>
-            {data.map((serie) => (
-              <li key={serie.id}>
-                <img
-                  src={`https://image.tmdb.org/t/p/w300${serie.backdrop_path}`}
-                  alt={serie.title}
-                />
-              </li>
-            ))}
-          </ul>
+          <section>
+            <h2>Novedades</h2>
+            <ul>
+              {data.map((serie) => (
+                <li key={serie.id}>
+                  <img
+                    src={`https://image.tmdb.org/t/p/w300${serie.backdrop_path}`}
+                    alt={serie.title}
+                  />
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
       </div>
     </div>

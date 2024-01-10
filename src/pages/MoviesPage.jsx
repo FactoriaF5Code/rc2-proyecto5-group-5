@@ -1,4 +1,5 @@
 import { Header } from "../components/Header/Header";
+import { Comedy } from "../components/Movies/Categories/Comedy";
 import { Movies } from "../components/Movies/Movies";
 
 export const MoviesPage = () => {
@@ -6,6 +7,7 @@ export const MoviesPage = () => {
     <>
       <Header />
       <Movies />
+      <Comedy />
     </>
   );
 };

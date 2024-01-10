@@ -1,25 +1,25 @@
-import "./Movies.css";
+import "../Series.css";
 import { useState, useEffect } from "react";
 
-export const Movies = () => {
+export const Comedy = () => {
   const [data, setData] = useState([]);
   const apiKey = "dd26df0c4c5b1b95d64c9c4568821204";
 
   useEffect(() => {
-    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`;
-    let pelis = localStorage.getItem("pelis");
-    if (pelis === null) {
+    const url = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_genres=35&language=es-ES`;
+    let dataSeriesComedy = localStorage.getItem("dataSeriesComedy");
+    if (dataSeriesComedy === null) {
       fetch(url)
         .then((response) => response.json())
         .then((response) => {
-          localStorage.setItem("pelis", JSON.stringify(response));
+          localStorage.setItem("dataSeriesComedy", JSON.stringify(response));
           setData(response.results);
         })
         .catch((error) => {
           console.error("Error fetching data:", error);
         });
     } else {
-      setData(JSON.parse(pelis).results);
+      setData(JSON.parse(dataSeriesComedy).results);
     }
   }, []);
 
@@ -29,8 +29,8 @@ export const Movies = () => {
         {data.length === 0 ? (
           <p>Cargando...</p>
         ) : (
-          <section>
-            <h2>Novedades</h2>
+            <section>
+            <h2>Series de comedia</h2>
             <ul>
               {data.map((movie) => (
                 <li key={movie.id}>
