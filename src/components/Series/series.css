@@ -1,10 +1,9 @@
-.serie{
-    
-    margin: 0 4.3rem 13rem 4.3rem;
+.serie {
+  margin: 0 4.3rem 13rem 4.3rem;
 }
-.serie ul{
-    display: flex;    
-    gap: 1.2rem;    
-    justify-content: center;
+.serie ul {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-

@@ -37,6 +37,7 @@ nav ul li{
 nav ul li:hover {
     color: var(--blanco)
 }
+
 .header__userLogo{
     display: flex;
     justify-content: center;
