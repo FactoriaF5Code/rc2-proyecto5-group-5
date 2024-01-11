@@ -1,56 +1,54 @@
 @import url(../../App.css);
 
-
-header{
-    height: 6.4rem;
-    background-color: var(--fondoNegro);
-    margin-bottom: 10rem;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    position: fixed;
+header {
+  height: 6.4rem;
+  background-color: var(--fondoNegro);
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  width: 100vw;
 }
 
-.left{
-    flex: 1;
+.left {
+  flex: 1;
 }
 
-.right{
-    margin-left: auto;
+.right {
+  margin-left: auto;
 }
 
 .logo {
-    max-width: 20rem;
-    margin: 0 4.3rem;
+  max-width: 20rem;
+  margin: 0 4.3rem;
 }
 
-nav ul{
-    display: flex;
-    gap: 3.1rem;
+nav ul {
+  display: flex;
+  gap: 3.1rem;
 }
 
-nav ul li{
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: var(--gris);
+nav ul li {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--gris);
 }
 
 nav ul li:hover {
-    color: var(--blanco)
+  color: var(--blanco);
 }
 
-.header__userLogo{
-    display: flex;
-    justify-content: center;
-    margin-right: 5.2rem;
+.header__userLogo {
+  display: flex;
+  justify-content: center;
+  margin-right: 5.2rem;
 }
 
-.header__userLogo img{
-    max-width: 3.2rem;
-    margin-left: 0.5rem;
-    border-radius: 0.5rem;
+.header__userLogo img {
+  max-width: 3.2rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.header__userLogo-more{
-    width: 1.2rem;
+.header__userLogo-more {
+  width: 1.2rem;
 }

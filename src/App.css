@@ -5,7 +5,6 @@
   --fondoNegro: #000;
   --blanco: #fff;
   --gris: #ccc8c8;
-
 }
 * {
   margin: 0;
@@ -30,5 +29,3 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-
-
