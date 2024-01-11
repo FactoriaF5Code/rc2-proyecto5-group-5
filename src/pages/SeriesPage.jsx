@@ -1,5 +1,5 @@
 import { Header } from '../components/Header/Header';
-import { Average } from '../components/Movies/Categories/Average';
+import { Average } from '../components/Series/Categories/Average';
 import { Comedy } from '../components/Series/Categories/Comedy';
 import { Series } from '../components/Series/Series';
 

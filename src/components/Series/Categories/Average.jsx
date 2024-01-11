@@ -1,4 +1,4 @@
-import '../Movies.css';
+import '../Series.css';
 import { useState, useEffect } from 'react';
 
 export const Average = () => {

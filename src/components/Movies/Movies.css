@@ -5,7 +5,6 @@
 .movie h2 {
   margin-bottom: 2rem;
   font-size: 3.2rem;
-  color: var(--blanco);
 }
 .movie ul {
   display: flex;
